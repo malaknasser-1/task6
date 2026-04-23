@@ -4,7 +4,6 @@ body {
     background-color: pink;
 }
 
-/* ================= GRID LAYOUT ================= */
 
 .main-layout {
     display: grid;
@@ -22,7 +21,7 @@ body {
     min-height: 100vh;
 }
 
-/* ================= HEADER ================= */
+
 
 .header {
     grid-area: header;
@@ -33,7 +32,7 @@ body {
     color: #a23051;
 }
 
-/* ================= NAV ================= */
+
 
 .nav1 {
     grid-area: nav;
@@ -53,7 +52,7 @@ body {
     font-family: Arial;
 }
 
-/* ================= SIDEBAR ================= */
+
 
 .sidebar {
     grid-area: sidebar;
@@ -67,7 +66,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* ================= CONTENT ================= */
+
 
 .content {
     grid-area: content;
@@ -101,7 +100,7 @@ body {
     height: 58px;
 }
 
-/* ================= CARDS ================= */
+
 
 .car {
     grid-area: car;
@@ -132,7 +131,7 @@ body {
     text-align: center;
 }
 
-/* ================= FOOTER ================= */
+
 
 .footer {
     grid-area: footer;
