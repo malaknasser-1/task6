@@ -1,0 +1,144 @@
+
+body {
+    margin: 0;
+    background-color: pink;
+}
+
+/* ================= GRID LAYOUT ================= */
+
+.main-layout {
+    display: grid;
+
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: auto auto 1fr auto auto;
+
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "sidebar content"
+        "sidebar car"
+        "footer footer";
+
+    min-height: 100vh;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+    grid-area: header;
+    background-color: #ffe4e8;
+    text-align: center;
+    padding: 10px;
+    font-family: cursive;
+    color: #a23051;
+}
+
+/* ================= NAV ================= */
+
+.nav1 {
+    grid-area: nav;
+    background-color: #ffe4e8;
+    padding: 15px 0;
+}
+
+.nav2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav2 h3 {
+    color: palevioletred;
+    font-family: Arial;
+}
+
+/* ================= SIDEBAR ================= */
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #ffd1dc;
+    padding: 15px;
+    font-family: Arial;
+    color: #9c2543;
+}
+
+.sidebar h3 {
+    margin-bottom: 10px;
+}
+
+/* ================= CONTENT ================= */
+
+.content {
+    grid-area: content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.text {
+    max-width: 400px;
+}
+
+.text h2 {
+    font-size: 297%;
+    color: #a23051;
+    font-family: cursive;
+}
+
+.text h4 {
+    font-size: 174%;
+    color: #9c2543;
+    margin-top: -10%;
+}
+
+.text button {
+    border-radius: 33px;
+    font-size: 173%;
+    background-color: #a23051;
+    color: #ffe4e8;
+    height: 58px;
+}
+
+/* ================= CARDS ================= */
+
+.car {
+    grid-area: car;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    background-color: #ffe4e8;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.card img {
+    width: 64%;
+    height: 224px;
+}
+
+.card h3 {
+    font-family: cursive;
+    color: #a23051;
+    text-align: center;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+    grid-area: footer;
+    background-color: #ffe4e8;
+    text-align: center;
+    padding: 10px;
+    font-family: Arial;
+    color: #a23051;
+}
